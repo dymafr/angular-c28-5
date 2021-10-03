@@ -1,13 +1,9 @@
 import { Routes } from '@angular/router';
-import { TodosComponent } from './features/todos.component';
 
 export const APP_ROUTES: Routes = [
   {
     path: '',
-    component: TodosComponent,
-  },
-  {
-    path: ':todoId',
-    component: TodosComponent,
+    loadChildren: () =>
+      import('./features/todos/todos.module').then((m) => m.TodosModule),
   },
 ];
