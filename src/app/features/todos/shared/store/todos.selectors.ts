@@ -1,7 +1,7 @@
 import { Params } from '@angular/router';
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { Todo } from '../interfaces/todo.interface';
-import { selectRouteParams } from './router.selector';
+import { Todo } from '../../../../shared/interfaces/todo.interface';
+import { selectRouteParams } from '../../../../shared/store/router.selector';
 import { todoFeatureKey, TodosState } from './todos.reducer';
 
 export const selectTodosFeature =

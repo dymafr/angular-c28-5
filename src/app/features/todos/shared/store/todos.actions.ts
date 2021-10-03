@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { Todo } from '../interfaces/todo.interface';
+import { Todo } from '../../../../shared/interfaces/todo.interface';
 
 export const fetchTodosAction = createAction('[ todos ] fetch todos');
 export const fetchTodosSuccessAction = createAction(

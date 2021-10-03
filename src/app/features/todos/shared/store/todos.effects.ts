@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { of } from 'rxjs';
 import { catchError, map, switchMap } from 'rxjs/operators';
-import { Todo } from '../interfaces/todo.interface';
-import { TodosService } from '../services/todos.service';
+import { Todo } from '../../../../shared/interfaces/todo.interface';
+import { TodosService } from '../../../../shared/services/todos.service';
 import {
   fetchTodosAction,
   fetchTodosSuccessAction,

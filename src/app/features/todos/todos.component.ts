@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { Todo } from '../shared/interfaces/todo.interface';
+import { Todo } from '../../shared/interfaces/todo.interface';
 import {
   fetchTodosAction,
   tryAddTodoAction,
   tryDeleteTodoAction,
   tryUpdateTodoAction,
-} from '../shared/store/todos.actions';
-import { selectTodo, selectTodosData } from '../shared/store/todos.selectors';
+} from '../../shared/store/todos.actions';
+import {
+  selectTodo,
+  selectTodosData,
+} from '../../shared/store/todos.selectors';
 
 @Component({
   selector: 'app-todos',
