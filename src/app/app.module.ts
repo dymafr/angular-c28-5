@@ -13,7 +13,7 @@ import { TodoEffects } from './shared/store/todos.effetcs';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routing';
-import { TodosComponent } from './features/todos.component';
+import { TodosComponent } from './features/todos/todos.component';
 
 @NgModule({
   declarations: [AppComponent, TodosComponent],
