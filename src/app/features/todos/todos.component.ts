@@ -7,11 +7,8 @@ import {
   tryAddTodoAction,
   tryDeleteTodoAction,
   tryUpdateTodoAction,
-} from '../../shared/store/todos.actions';
-import {
-  selectTodo,
-  selectTodosData,
-} from '../../shared/store/todos.selectors';
+} from './shared/store/todos.actions';
+import { selectTodo, selectTodosData } from './shared/store/todos.selectors';
 
 @Component({
   selector: 'app-todos',
