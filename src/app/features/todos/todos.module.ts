@@ -8,7 +8,7 @@ import { todoFeatureKey, todosReducer } from './shared/store/todos.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { TodoEffects } from './shared/store/todos.effects';
 import { TodosComponent } from './todos.component';
-import { MaterialModule } from 'src/app/shared/modules/material.module';
+import { MaterialModule } from '../../shared/modules/material.module';
 
 @NgModule({
   declarations: [TodosComponent],
